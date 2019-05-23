@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <script type="text/javascript" src="js/calculadora.js"></script>
+</head>
+
+<body>
+    <div class="calculadora">
+        <form action="#" name="calculadora" id="calculadora">
+            <h6>
+                <img style="width:15px; height:15px; margin-right: 5px;" src="images/icon.png" />
+                Calculadora
+            </h6>
+            <p id="textoPantalla">0</p>
+            <p>
+                <input type="button" class="largo" value="&larr;" onclick="retro()" />
+                <input type="button" value="CE" onclick="borradoParcial()" />
+                <input type="button" value="C" onclick="borradoTotal()" />
+                <input type="button" value="+/-" onclick="opuest()" />
+                <input type="button" value="&#8730;" onclick="raizc()" />
+            </p>
+            <p>
+                <input class="num" type="button" value="7" onclick="numero('7')" />
+                <input class="num" type="button" value="8" onclick="numero('8')" />
+                <input class="num" type="button" value="9" onclick="numero('9')" />
+                <input type="button" value="/" onclick="operar('/')" />
+                <input type="button" value="%" onclick="porcent()" />
+            </p>
+            <p>
+                <input class="num" type="button" value="4" onclick="numero('4')" />
+                <input class="num" type="button" value="5" onclick="numero('5')" />
+                <input class="num" type="button" value="6" onclick="numero('6')" />
+                <input type="button" value="*" onclick="operar('*')" />
+                <input type="button" value="1/x" onclick="inve()" />
+            </p>
+            <p>
+                <input class="num" type="button" value="1" onclick="numero('1')" />
+                <input class="num" type="button" value="2" onclick="numero('2')" />
+                <input class="num" type="button" value="3" onclick="numero('3')" />
+                <input type="button" value="-" onclick="operar('-')" />
+            </p>
+            <p>
+                <input class="num" id="cero" type="button" value="0" onclick="numero('0')" />
+                <input type="button" value="." onclick="numero('.')" />
+                <input type="button" value="+" onclick="operar('+')" />
+                <input id="igual" type="button" value="=" onclick="igualar()" />
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
